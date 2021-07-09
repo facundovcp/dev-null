@@ -3,8 +3,9 @@ import Blog from "./Blog";
 
 const style = {
   bloglistContainer: {
-    marginBottom: "2%",
-    marginTop: "2%",
+    marginBottom: "25px",
+    marginTop: "25px",
+    borderBottom: "2px solid #f1f4f8",
   },
 };
 
@@ -18,7 +19,11 @@ export default function BlogListing({ blogs, search: Search }) {
       )}
       <div className="columns is-multiline">
         {blogs.map(({ id, frontmatter }) => (
-          <div key={id} className="column is-9" style={style.bloglistContainer}>
+          <div
+            key={id}
+            className="column is-12"
+            style={style.bloglistContainer}
+          >
             <Blog
               title={frontmatter.title}
               subtitle={frontmatter.subtitle}
