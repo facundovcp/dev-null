@@ -13,7 +13,7 @@ export default function IndexPage({ data, pageContext }) {
         description="dev/null is aiming to be my personal blog to disclose my knowledge"
       />
       <div className="p-4">
-        <p className="latestArticles">Latest Articles:</p>
+        <p className="latestArticles"> {"> Latest Articles:"}</p>
         <BlogListing
           blogs={nodes}
           // search={() => (

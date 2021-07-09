@@ -1,6 +1,8 @@
 @import "~bulma/bulma.sass";
 @import url("https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
 a[disabled] {
   pointer-events: none;
 }
@@ -17,12 +19,12 @@ a[disabled] {
     .navbar {
       background-color: transparent;
       .navbar-item {
-        color: #d8d8d8;
+        color: white;
       }
 
       .navbar-brand {
         .title {
-          color: #d8d8d8;
+          color: white;
         }
       }
     }
@@ -31,7 +33,7 @@ a[disabled] {
     .subtitle,
     .content,
     .post-title {
-      color: #d8d8d8;
+      color: white;
     }
     .card-content {
       background-color: #232129;
@@ -46,13 +48,15 @@ a[disabled] {
       color: #fff;
     }
     .latestArticles {
-      border-bottom: solid #d8d8d8 3px;
+      border-bottom: solid white 3px;
     }
   }
   .post-title {
     text-decoration: underline;
     margin-bottom: 5px;
-    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    // font-family: "Roboto Condensed", sans-serif;
     cursor: pointer;
   }
 }
