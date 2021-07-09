@@ -4,9 +4,7 @@ import ThemeToggle from "./ThemeToggle";
 
 const style = {
   title: {
-    fontFamily: "'Press Start 2P', sans-serif",
-    fontSize: "18px",
-    paddingTop: "1px",
+    fontFamily: "'Roboto Condensed', sans-serif",
   },
 };
 
