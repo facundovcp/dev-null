@@ -5,6 +5,10 @@ const style = {
   time: {
     fontSize: "14px",
     fontFamily: "'DM Mono', monospace",
+    marginLeft: "5px",
+  },
+  description: {
+    marginLeft: "5px",
   },
 };
 
@@ -18,7 +22,7 @@ export default function Blog({ title, date, subtitle, slug }) {
             {date}
           </time>
         </div>
-        <p>{subtitle}</p>
+        <p style={style.description}>{subtitle}</p>
         <Link className="button is-black is-small" to={`/blogs/${slug}`}>
           Continue reading
         </Link>

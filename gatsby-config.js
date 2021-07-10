@@ -34,10 +34,29 @@ module.exports = {
           {
             resolve: "gatsby-remark-prismjs",
             options: {
+              lassPrefix: "language-js",
               aliases: {
                 es6: "js",
               },
+              showLineNumbers: true,
+              languageExtensions: [
+                {
+                  language: "superscript",
+                  extend: "javascript",
+                  definition: {
+                    superscript_types: /(SuperType)/,
+                  },
+                  insertBefore: {
+                    function: {
+                      superscript_keywords: /(superif|superelse)/,
+                    },
+                  },
+                },
+              ],
             },
+          },
+          {
+            resolve: `gatsby-remark-highlight-code`,
           },
         ],
       },

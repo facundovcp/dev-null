@@ -3,6 +3,8 @@ import Layout from "../components/Layout";
 import { graphql, Link } from "gatsby";
 import BlogListing from "../components/BlogListing";
 import Seo from "../components/Seo";
+import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
+deckDeckGoHighlightElement();
 
 export default function IndexPage({ data, pageContext }) {
   const { nodes } = data.allMarkdownRemark;

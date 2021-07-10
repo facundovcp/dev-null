@@ -5,17 +5,17 @@ import ThemeToggle from "./ThemeToggle";
 const style = {
   title: {
     fontFamily: "'Press Start 2P', sans-serif",
-    fontSize: "18px",
-    paddingTop: "5px",
+    fontSize: "32px",
+    paddingTop: "2px",
   },
 };
 
 export default function AppHeader({ seo }) {
   return (
-    <nav className="navbar is-transparent mb-5 p-5">
+    <nav className="navbar is-transparent mb-5 p-4">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">
-          <h1 className="title" style={style.title}>
+          <h1 className="title reveal-text" style={style.title}>
             {"<dev/null>"}
           </h1>
         </Link>

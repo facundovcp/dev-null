@@ -14,15 +14,20 @@ a[disabled] {
 
 .main-wrapper {
   &.dark {
+    blockquote {
+      color: white;
+      padding: 0.8em 0.8em 0.8em 1em;
+      position: relative;
+    }
     .navbar {
       background-color: transparent;
       .navbar-item {
-        color: #d8d8d8;
+        color: #f3f1f1;
       }
 
       .navbar-brand {
         .title {
-          color: #d8d8d8;
+          color: #f3f1f1;
         }
       }
     }
@@ -31,7 +36,7 @@ a[disabled] {
     .subtitle,
     .content,
     .post-title {
-      color: #d8d8d8;
+      color: #f3f1f1;
     }
     .card-content {
       background-color: #232129;
@@ -46,13 +51,13 @@ a[disabled] {
       color: #fff;
     }
     .latestArticles {
-      border-bottom: solid #d8d8d8 3px;
+      border-bottom: solid #f3f1f1 3px;
     }
   }
   .post-title {
     text-decoration: underline;
     margin-bottom: 5px;
-    font-family: "Roboto Condensed", sans-serif;
+    // font-family: "Roboto Condensed", sans-serif;
     cursor: pointer;
   }
 }
@@ -92,9 +97,102 @@ a[disabled] {
 
 ::-webkit-scrollbar {
   width: 10px;
+  height: 10px;
   background-color: #f5f5f5;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #000000;
+}
+
+$animation-delay: 0.5s;
+$duration: 200ms;
+$iterations: 1;
+.reveal-text,
+.reveal-text:after {
+  animation-delay: $animation-delay;
+  animation-iteration-count: $iterations;
+  animation-duration: $duration;
+  animation-fill-mode: both;
+  animation-timing-function: cubic-bezier(0, 0.1, 1, 0);
+}
+
+.reveal-text {
+  // margin-top: 20px;
+  position: relative;
+  font-size: 40px;
+  user-select: none;
+  animation-name: reveal-text;
+  color: #000;
+  white-space: nowrap;
+  font-family: "Work Sans", sans-serif;
+
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // background-color: #000;
+    transform: scaleX(0);
+    transform-origin: 0 50%;
+    pointer-events: none;
+    animation-name: revealer-text;
+  }
+}
+
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@keyframes revealer-text {
+  0%,
+  50% {
+    transform-origin: 0 50%;
+  }
+
+  60%,
+  100% {
+    transform-origin: 100% 50%;
+  }
+
+  50% {
+    transform: scaleX(1);
+  }
+
+  60% {
+    transform: scaleX(1);
+  }
+
+  100% {
+    transform: scaleX(0);
+  }
+}
+
+blockquote p::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 4px;
+  border-radius: 8px;
+  background: #c8ccd0;
+}
+blockquote {
+  color: #535a60;
+  padding: 0.8em 0.8em 0.8em 1em;
+  position: relative;
+}
+
+.gatsby-highlight {
+  font-size: 13px !important;
 }
