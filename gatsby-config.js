@@ -16,6 +16,8 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: "gatsby-plugin-feed",
       options: rss.options,
@@ -31,6 +33,11 @@ module.exports = {
       resolve: "gatsby-transformer-remark",
       options: {
         plugins: [
+          `gatsby-remark-relative-images`,
+          {
+            resolve: `gatsby-remark-images`,
+            options: { maxWidth: 500 },
+          },
           {
             resolve: "gatsby-remark-prismjs",
             options: {
@@ -65,8 +72,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Code Space`,
-        short_name: `Code Space`,
+        name: `dev/null`,
+        short_name: `dev/null`,
         start_url: `/`,
         background_color: `#f7f0eb`,
         theme_color: `#a2466c`,

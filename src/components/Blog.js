@@ -17,7 +17,9 @@ export default function Blog({ title, date, subtitle, slug }) {
     <>
       <div className="content is-normal">
         <div className="head-wrapper mb-2">
-          <h2 className="post-title">{title}</h2>
+          <h2 className="post-title" to={`/blogs/${slug}`}>
+            {title}
+          </h2>
           <time style={style.time} dateTime={style.time}>
             {date}
           </time>

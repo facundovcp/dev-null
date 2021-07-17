@@ -1,19 +1,19 @@
 ---
 title: React.js beginner Part 1 - Library Introduction and how React works
 subtitle: This article will cover some background of React, advantages of his usage, how react works and basic concepts to understand better this JavaScript library.
-date: 2021-07-10
+date: 2021-07-09
 slug: react-bgnner-p1-react-intro-hooks
 author: Facundo Lopez
 rating: 5
 serie: Reactjs
-# coverImage: https://cdn.sanity.io/images/55mm68d3/production/98d581fb1463a4ec94de31aa9ee7bb95ebc9c486-1400x933.jpg?h=600&fm=jpg&q=70
+coverImage: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.ineat-group.com%2Fwp-content%2Fuploads%2F2019%2F04%2FReact.png&f=1&nofb=1
 ---
+![TODO: provide alt](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.ineat-group.com%2Fwp-content%2Fuploads%2F2019%2F04%2FReact.png&f=1&nofb=1)</div>
 
 # React.js beginner Part 1 - Library introduction.
 
 ## The article will cover some background of React, advantages of his usage, how react works under the hood, and basic concepts to understand better this JavaScript library.
 
-<!-- ![TODO: provide alt](https://cdn.sanity.io/images/55mm68d3/production/98d581fb1463a4ec94de31aa9ee7bb95ebc9c486-1400x933.jpg?h=600&fm=jpg&q=70)</div> -->
 
 ---
 
@@ -39,16 +39,17 @@ React.js approaches building user interfaces differently by breaking them into c
 
 Let's look at a project like Angular, which shares the same purpose as React. When you set up an Angular project, it is bootstrapped with nearly every single thing that you'll need to make a complete, large-scale app.
 But what makes React a library and not a framework?
-In short, everything that you need to make a complete application is included in your Angular project when it's generated. But that is not the case with React, **It relies on different libraries and packages.**
-There is a robust ecosystem of React libraries that you can add to your React project to achieve whatever you're looking for. For example for HTTP request you could use promise based Axios package.
+In short, everything that you need to make a complete application is included in your Angular project when it's generated, but that is not the case with React, **It relies on different libraries and packages.**
+Thanks to React's popularity and widespread usage, there is a ecosystem of React libraries that anyone can add and use on React projects. This helps to acchieve whatever you're looking for,
+we can say that there's almost one package or library for everything you will need. For example for HTTP request you could use promise based Axios package.
 
 ### > Why should we use React?
 At this point you could be wondering why you should be using React. This is my opinion about why I use react:
+
+
 - **React is Flexible:**
 
 
-  Thanks to React's popularity and widespread usage, there is a ecosystem of React libraries that anyone can add and use on React projects. This helps to acchieve whatever you're looking for,
-  we can say that there's almost one package or library for everything you will need.
 > *"Learn React Once and Write Everywhere"*
 
 
@@ -132,8 +133,8 @@ var sum = function sum(a, b) {
 Node will bring the development server and environments configurations needed to use the React app, on production or develop.
 Node Package Manager (npm) is a package manager through which one can install various packages ( modules ) needed for web development. It’s a CLI tool which gives access to it’s online repository which contains thousands of open-source libraries and tools.
 
-## Resources
+<!-- ## Resources
 
 React.js documentation - _Introducing Hooks_: [https://reactjs.org/docs/hooks-intro.html]([https://reactjs.org/docs/hooks-intro.html)
 
-React.js documentation - _Why did we build React.js?_: [https://reactjs.org/blog/2013/06/05/why-react.html](https://reactjs.org/blog/2013/06/05/why-react.htmll)
+React.js documentation - _Why did we build React.js?_: [https://reactjs.org/blog/2013/06/05/why-react.html](https://reactjs.org/blog/2013/06/05/why-react.htmll) -->
