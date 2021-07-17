@@ -10,6 +10,7 @@ const style = {
 };
 
 export default function BlogListing({ blogs, search: Search }) {
+  const blogsData = blogs.nodes;
   return (
     <>
       {Search && (
@@ -18,7 +19,7 @@ export default function BlogListing({ blogs, search: Search }) {
         </div>
       )}
       <div className="columns is-multiline">
-        {blogs.map(({ id, frontmatter }) => (
+        {blogsData.map(({ id, frontmatter }) => (
           <div
             key={id}
             className="column is-12"
@@ -29,6 +30,7 @@ export default function BlogListing({ blogs, search: Search }) {
               subtitle={frontmatter.subtitle}
               slug={frontmatter.slug}
               date={frontmatter.date}
+              coverImage={frontmatter.coverImage}
             />
           </div>
         ))}

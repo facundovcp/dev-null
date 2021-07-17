@@ -1,12 +1,12 @@
 ---
 title: Node.js - How it works under the hood.
-subtitle: Introduction to Node.js, How Event Loop works, Event Loop phases, Timers, promises, async/await.
+subtitle: Introduction to Node.js, How Event Loop works, Event Loop phases, Timers, Promises and async/await implementation.
 date: 2021-07-10
 slug: node-how-it-works-uthood
 author: Facundo Lopez
 rating: 5
 serie: Nodejs
-coverImage: https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fpracticaldev%2Fimage%2Ffetch%2Fs--vrvqSDHx--%2Fc_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000%2Fhttps%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fs15ubgod56c7butyt7eu.jpg&f=1&nofb=1
+coverImage: ./blog-cover-images/node.png
 ---
 
 ![TODO: provide alt](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fpracticaldev%2Fimage%2Ffetch%2Fs--vrvqSDHx--%2Fc_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000%2Fhttps%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fs15ubgod56c7butyt7eu.jpg&f=1&nofb=1)
@@ -223,7 +223,7 @@ You can see how timeout finished is written at the end, because is treated as a 
 
 ## > Async/Await Function
 
-Async/Await enables us to write asynchronous code in a synchronous, which produces cleaner and easier-to-understand logic. Under the hood, Asyn/Await will be handle as a promise using JS generators.
+Async/Await enables us to write asynchronous code in a synchronous way, which produces cleaner and easier-to-understand logic. Under the hood, Asyn/Await will be handle as a promise using JS generators.
 By wrapping the logic inside an async function, we can replace the ``then`` callbacks with ``await`` statements. The code **pauses execution** on those lines until the Promises resolve.
 
 Async/Await Syntax
@@ -260,7 +260,8 @@ async function getUser() {
 ## Conclusion
 
 Because Web APIs often provide data asynchronously, learning how to handle the result of asynchronous actions is an essential part of being a JavaScript developer. In this article, you learned how the host environment uses the event loop to handle the order of execution of the code.
-We cover a high level Event Loop architecture explaination, the phases of the Event Loop, callbacks, macrotasks, microtasks, promises, and async/await syntax. Finally, you used the Fetch Web API to handle asynchronous actions.
+We cover a high level Event Loop architecture explanation, the phases of the Event Loop, callbacks, macrotasks, microtasks, promises, and async/await syntax. Finally, you used the Fetch Web API to handle asynchronous actions.
 Therefore, I hope this article has helped you to review or discover all these types of concepts that some times makes Node.js a blackbox.
 
 **If you have any questions or want to contribute something to this article, please leave it in the comments.**
+

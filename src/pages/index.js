@@ -7,7 +7,7 @@ import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/
 deckDeckGoHighlightElement();
 
 export default function IndexPage({ data, pageContext }) {
-  const { nodes } = data.allMarkdownRemark;
+  const blogData = data.allMarkdownRemark;
   return (
     <Layout>
       <Seo
@@ -17,7 +17,7 @@ export default function IndexPage({ data, pageContext }) {
       <div className="p-4">
         <p className="latestArticles">Latest Articles:</p>
         <BlogListing
-          blogs={nodes}
+          blogs={blogData}
           // search={() => (
           //   <SearchContainer searchIndex={pageContext.searchIndex} />
           // )}
@@ -44,6 +44,15 @@ export const query = graphql`
           slug
           subtitle
           author
+          coverImage {
+            childImageSharp {
+              gatsbyImageData(
+                width: 100
+                blurredOptions: { width: 50 }
+                placeholder: BLURRED
+              )
+            }
+          }
         }
       }
     }

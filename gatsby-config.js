@@ -14,6 +14,7 @@ module.exports = {
     },
   },
   plugins: [
+    `gatsby-plugin-image`,
     "gatsby-plugin-sass",
     "gatsby-plugin-sitemap",
     `gatsby-plugin-sharp`,
@@ -26,6 +27,13 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `content`,
+        path: `${__dirname}/content/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
         path: `${__dirname}/content/`,
       },
     },
