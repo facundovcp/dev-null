@@ -1,6 +1,6 @@
 ---
 title: Node.js - How it works under the hood.
-subtitle: Introduction to Node.js, background of the runtime env, Node.js Event Loop, Timers.
+subtitle: Introduction to Node.js, How Event Loop works, Event Loop phases, Timers, promises, async/await.
 date: 2021-07-10
 slug: node-how-it-works-uthood
 author: Facundo Lopez
