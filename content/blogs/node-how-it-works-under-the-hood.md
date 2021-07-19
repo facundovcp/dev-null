@@ -7,6 +7,7 @@ author: Facundo Lopez
 rating: 5
 serie: Nodejs
 coverImage: ./blog-cover-images/node.png
+tags: [javascript, node.js, event-loop, backend, long-lecture]
 ---
 
 ![TODO: provide alt](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fres.cloudinary.com%2Fpracticaldev%2Fimage%2Ffetch%2Fs--vrvqSDHx--%2Fc_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000%2Fhttps%3A%2F%2Fdev-to-uploads.s3.amazonaws.com%2Fi%2Fs15ubgod56c7butyt7eu.jpg&f=1&nofb=1)
@@ -259,7 +260,7 @@ async function getUser() {
 
 ## Conclusion
 
-Because Web APIs often provide data asynchronously, learning how to handle the result of asynchronous actions is an essential part of being a JavaScript developer. In this article, you learned how the host environment uses the event loop to handle the order of execution of the code.
+Because Web APIs often provide data asynchronously, learning how to handle the result of asynchronous actions is an essential part of being a JavaScript developer. In this article, you have learnt how the host environment uses the event loop to handle the order of execution of the code.
 We cover a high level Event Loop architecture explanation, the phases of the Event Loop, callbacks, macrotasks, microtasks, promises, and async/await syntax. Finally, you used the Fetch Web API to handle asynchronous actions.
 Therefore, I hope this article has helped you to review or discover all these types of concepts that some times makes Node.js a blackbox.
 

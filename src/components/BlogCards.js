@@ -1,5 +1,5 @@
 import React from "react";
-import Blog from "./Blog";
+import BlogCard from "./BlogCard";
 
 const style = {
   bloglistContainer: {
@@ -9,23 +9,14 @@ const style = {
   },
 };
 
-export default function BlogListing({ blogs, search: Search }) {
+export default function BlogCards({ blogs, search: Search }) {
   const blogsData = blogs.nodes;
   return (
     <>
-      {/* {Search && (
-        <div className="mb-4">
-          <Search />
-        </div>
-      )} */}
       <div className="columns is-multiline">
         {blogsData.map(({ id, frontmatter }) => (
-          <div
-            key={id}
-            className="column is-12"
-            style={style.bloglistContainer}
-          >
-            <Blog
+          <div key={id} className="column is-4" style={style.bloglistContainer}>
+            <BlogCard
               title={frontmatter.title}
               subtitle={frontmatter.subtitle}
               slug={frontmatter.slug}

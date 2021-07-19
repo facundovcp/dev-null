@@ -18,7 +18,7 @@ export default function Blog({ title, date, subtitle, slug, coverImage }) {
     <>
       <div className="content is-normal">
         <div className="columns is-vcentered is-multiline">
-          <div className="column is-2">
+          <div className="column is-centered is-2">
             <GatsbyImage image={getImage(coverImage)} alt={slug} />
           </div>
           <div className="column is-10">

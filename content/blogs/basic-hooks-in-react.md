@@ -7,6 +7,8 @@ author: Facundo Lopez
 rating: 5
 serie: Reactjs
 coverImage: ./blog-cover-images/react.png
+tags: [javascript, react.js, frontend]
+
 ---
 ![TODO: provide alt](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fblog.ineat-group.com%2Fwp-content%2Fuploads%2F2019%2F04%2FReact.png&f=1&nofb=1)</div>
 

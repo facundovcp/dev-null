@@ -196,3 +196,9 @@ blockquote {
 .gatsby-highlight {
   font-size: 13px !important;
 }
+
+.input:focus {
+  outline: none !important;
+  border-color: black;
+  box-shadow: 0 0 2px black;
+}
