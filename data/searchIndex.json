@@ -1,19 +1,19 @@
 {
   "blogs": [
     {
+      "slug": "react-bgnner-p1",
+      "title": "React.js beginner Part 1 - Library Introduction and how React works",
+      "subtitle": " This article will cover some background of React, advantages of his usage, how react works and basic concepts to understand better this JavaScript library."
+    },
+    {
       "slug": "build-a-native-app-with-javascript",
       "title": "Electron & React JS Build a Native App with Javascript, Part 1",
       "subtitle": "Learn how to build a native app with Electron & React JS. Utilize JS, Html & CSS to create a fully native app."
     },
     {
-      "slug": "how-to-consume-data-in-next-js-apps",
-      "title": "How to consume data in Next.js apps",
-      "subtitle": "The way data is fetched on Next.js will affect the pre-rendering strategy applied. Do you know them?"
-    },
-    {
-      "slug": "js-design-patterns",
-      "title": "JS reveal and module design patterns",
-      "subtitle": "I decided to make an overview and examples of most common and known design patterns in JS."
+      "slug": "graphql-basics",
+      "title": "GraphQL - What it is and how it works",
+      "subtitle": "I decided to make an overview of the basic concepts in order to understand better GraphQL in action."
     },
     {
       "slug": "learn-gatsby-quick",
@@ -24,6 +24,11 @@
       "slug": "why-should-one-use-angular",
       "title": "Why should one use Angular",
       "subtitle": "An Introduction to Angular, its pros & cons, and how it differs from other frameworks/libraries."
+    },
+    {
+      "slug": "node-how-it-works-uthood",
+      "title": "Node.js - How it works under the hood.",
+      "subtitle": "Introduction to Node.js, How Event Loop works, Event Loop phases, Timers, Promises and async/await implementation."
     }
   ]
 }

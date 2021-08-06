@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import ThemeToggle from "./ThemeToggle";
 import SearchContainer from "./SearchContainer";
-
+import { StaticImage } from "gatsby-plugin-image";
 const style = {
   title: {
     fontFamily: "'Press Start 2P', sans-serif",
@@ -11,14 +11,21 @@ const style = {
   },
 };
 
+const img = "../images/dev-null-logo-white.png";
+
 export default function AppHeader({ seo }) {
   return (
-    <nav className="navbar is-transparent mb-5 p-4">
+    <nav className="navbar is-transparentp-4">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">
-          <h1 className="title reveal-text" style={style.title}>
+          <StaticImage
+            src={"../images/dev-null-logo-white.png"}
+            width="40"
+            height="40"
+          />
+          {/* <h1 className="title reveal-text" style={style.title}>
             {"<dev/null>"}
-          </h1>
+          </h1> */}
         </Link>
         <div
           className="navbar-burger"
@@ -35,15 +42,12 @@ export default function AppHeader({ seo }) {
         className="navbar-menu is-vcentered"
       >
         <div className="navbar-start">
-          <Link className="navbar-item" to="/">
-            Home
-          </Link>
           {/* <Link className="navbar-item" to="/blogs">
             Articles
           </Link> */}
-          <Link className="navbar-item" to="/about">
+          {/* <Link className="navbar-item" to="/about">
             About me
-          </Link>
+          </Link> */}
         </div>
         <div className="navbar-end ">
           <div className="navbar-item">

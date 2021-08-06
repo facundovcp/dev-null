@@ -6,6 +6,7 @@ slug: build-a-native-app-with-javascript
 author: Filip Jerga
 rating: 1
 coverImage: ./blog-cover-images/node.png
+cardImage: ./blog-cards-images/react.jpg
 ---
 
 # Electron & React JS: Build a Native App with Javascript, Part 1

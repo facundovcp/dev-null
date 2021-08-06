@@ -7,6 +7,7 @@ author: Facundo Lopez
 rating: 5
 serie: Nodejs
 coverImage: ./blog-cover-images/node.png
+cardImage: ./blog-cards-images/node.jpg
 tags: [javascript, node.js, event-loop, backend, long-lecture]
 ---
 
@@ -16,7 +17,7 @@ tags: [javascript, node.js, event-loop, backend, long-lecture]
 
 
 
-## > What is Node.js?:
+## What is Node.js?:
 
 > Node.js is a single-threaded event-driven platform that is capable of running non-blocking, asynchronously programming.
 
@@ -29,7 +30,7 @@ JavaScript is generally considered an **interpreted language**, but modern JavaS
 **A Node.js app runs in a single process**, without creating a new thread for every request. Node.js provides a set of asynchronous I/O primitives (libuv) in its standard library that prevent JavaScript code from blocking and generally. **We can understand node as a synchronous lenguage that can be written asynchronous**.
 
 
-## > The Node.js Event Loop:
+## The Node.js Event Loop:
 
 
 The first thing needed in order to understand the Event Loop is an understanding of the **event-driven programming paradigm**.
@@ -77,7 +78,7 @@ In order to understand why the callback inside the request function is executed 
 For our example, at the beggining of the code, the first ``console.log('Hello')`` its going to be executed immediately, after that the url const value is saved. Then we have a call to an API, as this function contains a callback its going to be handle different: Node will run the **Thread Poll** and add this callback there in order to not block the **Event Queue** execution time. The call to the API has been triggered and in some point will finish, the **Event Queue** is still running and its going to print in console ``World``. When the call to the API finish, the callback will be moved to the **Task Queue**, the **Event Loop** will execute the logic inside the callback because there's nothing on the **Event Queue** to execute, returning the data in the console.
 
 
-## > Event Loop phases:
+## Event Loop phases:
 The Event Loop is basically a mechanism which works using phases through which it iterates if there's something that needs to be executed, thats why we can say that the Event Loop its almost an infinite loop, if the Event Queue is empty the Event Loop will turn off until something fills the Event Queue. 
 
 ![Event Loop Phases](../blogs/blog-images/event-loop-phases.png)
@@ -121,7 +122,7 @@ In this phase, the Event Loop takes the callbacks from the Check phase's queue a
  >**Apart from all these, there is one more microtask queue which contains callbacks associated with** ``process.nextTick`` **and Promises callbacks that will be covered later on this post.**
  >The process.nextTick comes under microtasks which are prioritised above all other phases and the callback associated with it is executed just after the event loop finishes the current operation. Which means that, whatever callback we pass to ``process.nextTick``, the event loop will complete its current operation and then execute callbacks from the microtasks queue until it is drained up. Once the queue is drained up, it returns back to the phase where it left.
 
-## > setImmediate() vs setTimeout()
+## setImmediate() vs setTimeout()
 ``setImmediate()`` and ``setTimeout()`` are similar, but are handle in different ways by the Event Loop.
 ``setImmediate()`` is designed to execute a script once the current Poll Phase completes.
 ``setTimeout()`` schedules a script to be run after a minimum threshold in ms has elapsed.
@@ -151,7 +152,7 @@ The Event Loop its going to check the ``microtask queue`` and executes the callb
 It then goes to the ``Check/setImmediate`` phase where it sees the timer expired and executes the callback which logs '3'.
 In the next iteration of the event loop, it sees the timer of 50ms expired and logs down 1.
 
-## > The Event Loop and Promises
+## The Event Loop and Promises
 
 In order to understand more and more about how Node.js works under the hood, lets take a look to how the promises are handled by the Event Loop.
 Promises were created to avoid ``callbacks hell``
@@ -222,7 +223,7 @@ console.log('end');
 You can see how timeout finished is written at the end, because is treated as a macrotask so that at the end the enqueued microtasks are executed, the two console.log referring to the callbacks of the promises.
 
 
-## > Async/Await Function
+## Async/Await Function
 
 Async/Await enables us to write asynchronous code in a synchronous way, which produces cleaner and easier-to-understand logic. Under the hood, Asyn/Await will be handle as a promise using JS generators.
 By wrapping the logic inside an async function, we can replace the ``then`` callbacks with ``await`` statements. The code **pauses execution** on those lines until the Promises resolve.

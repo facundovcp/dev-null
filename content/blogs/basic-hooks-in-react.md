@@ -1,12 +1,13 @@
 ---
-title: React.js beginner Part 1 - Library Introduction and how React works
+title: React.js beginner Part 1 - Library Introduction
 subtitle: This article will cover some background of React, advantages of his usage, how react works and basic concepts to understand better this JavaScript library.
 date: 2021-07-09
-slug: react-bgnner-p1-react-intro-hooks
+slug: react-bgnner-p1
 author: Facundo Lopez
 rating: 5
 serie: Reactjs
 coverImage: ./blog-cover-images/react.png
+cardImage: ./blog-cards-images/react.jpg
 tags: [javascript, react.js, frontend]
 
 ---
@@ -14,7 +15,7 @@ tags: [javascript, react.js, frontend]
 
 # React.js beginner Part 1 - Library introduction.
 
-## The article will cover some background of React, advantages of his usage, how react works under the hood, and basic concepts to understand better this JavaScript library.
+### The article will cover some background of React, advantages of his usage, how react works under the hood, and basic concepts to understand better this JavaScript library.
 
 
 ---

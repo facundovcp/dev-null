@@ -16,26 +16,26 @@ const style = {
 export default function Blog({ title, date, subtitle, slug, coverImage }) {
   return (
     <>
-      <div className="content is-normal">
+      <div className="content is-normal blog-list">
         <div className="columns is-vcentered is-multiline">
-          <div className="column is-centered is-2">
+          <div className="column is-align-content-center is-centered is-1">
             <GatsbyImage image={getImage(coverImage)} alt={slug} />
           </div>
-          <div className="column is-10">
+          <div className="column is-11">
             <div className="head-wrapper mb-2">
-              <h2 className="post-title" to={`/blogs/${slug}`}>
+              <h3 className="post-title" to={`/blogs/${slug}`}>
                 {title}
-              </h2>
+              </h3>
               <time style={style.time} dateTime={style.time}>
                 {date}
               </time>
             </div>
+            <p style={style.description}>{subtitle}</p>
+            {/* <Link className="button is-black is-small" to={`/blogs/${slug}`}>
+              Continue reading
+            </Link> */}
           </div>
         </div>
-        <p style={style.description}>{subtitle}</p>
-        <Link className="button is-black is-small" to={`/blogs/${slug}`}>
-          Continue reading
-        </Link>
       </div>
     </>
   );

@@ -5,7 +5,6 @@ const style = {
   bloglistContainer: {
     marginBottom: "2%",
     marginTop: "2%",
-    borderBottom: "1px solid grey",
   },
 };
 
@@ -22,6 +21,7 @@ export default function BlogCards({ blogs, search: Search }) {
               slug={frontmatter.slug}
               date={frontmatter.date}
               coverImage={frontmatter.coverImage}
+              cardImage={frontmatter.cardImage}
             />
           </div>
         ))}

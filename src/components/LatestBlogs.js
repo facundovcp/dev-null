@@ -31,6 +31,14 @@ export default function LatestBlogs() {
                 )
               }
             }
+            cardImage {
+              childImageSharp {
+                gatsbyImageData(
+                  blurredOptions: { width: 50 }
+                  placeholder: BLURRED
+                )
+              }
+            }
           }
         }
       }

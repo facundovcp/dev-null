@@ -5,7 +5,7 @@ const style = {
   bloglistContainer: {
     marginBottom: "2%",
     marginTop: "2%",
-    borderBottom: "1px solid grey",
+    // borderBottom: "1px solid grey",
   },
 };
 

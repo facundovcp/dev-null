@@ -6,6 +6,7 @@ slug: learn-gatsby-quick
 author: Filip Jerga
 rating: 1
 coverImage: ./blog-cover-images/node.png
+cardImage: ./blog-cards-images/node.jpg
 ---
 
 # What are the benefits of the Next.JS framework?

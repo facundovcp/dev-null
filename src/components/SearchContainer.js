@@ -2,7 +2,7 @@ import React, { useState, useEffect, useCallback } from "react";
 import * as JsSearch from "js-search";
 import * as styles from "./SearchContainer.module.scss";
 import searchIndex from "../../data/searchIndex.json";
-
+import { navigate } from "gatsby";
 export default function SearchContainer() {
   const [search, setSearch] = useState({
     results: [],
@@ -33,12 +33,14 @@ export default function SearchContainer() {
     setSearch({ ...search, results, query: value });
   };
 
+  var searchInputHandler = false;
+
   return (
     <div>
       <input
         onChange={performSearch}
         value={search.query}
-        style={{ width: "300px" }}
+        style={{ width: "200px" }}
         className="input"
         type="text"
         placeholder="Search"
@@ -48,6 +50,9 @@ export default function SearchContainer() {
           <ul>
             {search.results.map((result) => (
               <li
+                onClick={() => {
+                  navigate(`/blogs/${result.slug}`);
+                }}
                 role="presentation"
                 key={result.slug}
                 className={`${styles.option} p-2`}

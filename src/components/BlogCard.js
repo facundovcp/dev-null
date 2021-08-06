@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
+import { navigate } from "gatsby";
 
 const style = {
   time: {
@@ -13,19 +13,26 @@ const style = {
   },
 };
 
-export default function BlogCard({ title, date, subtitle, slug, coverImage }) {
+export default function BlogCard({
+  title,
+  date,
+  subtitle,
+  slug,
+  coverImage,
+  cardImage,
+}) {
   return (
-    <div className="card">
+    <div
+      className="card"
+      onClick={() => {
+        navigate(`/blogs/${slug}`);
+      }}
+    >
       <header className="card-header">
         <p className="card-header-title">{title}</p>
       </header>
       <div className="card-image">
-        <figure className="image is-4by1">
-          <img
-            src="https://bulma.io/images/placeholders/1280x960.png"
-            alt="Placeholder image"
-          />
-        </figure>
+        <GatsbyImage image={getImage(cardImage)} alt={slug} />
       </div>
       <div className="card-content">
         <div className="content">

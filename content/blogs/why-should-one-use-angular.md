@@ -6,6 +6,7 @@ slug: why-should-one-use-angular
 author: Filip Jerga
 rating: 5
 coverImage: ./blog-cover-images/node.png
+cardImage: ./blog-cards-images/node.jpg
 ---
 
 # Why should one use Angular?

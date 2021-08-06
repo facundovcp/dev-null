@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import "./blog.scss";
 import Seo from "../components/Seo";
+import AppHeader from "../components/AppHeader";
 
 export default function Blog({ data }) {
   const {
@@ -16,16 +17,19 @@ export default function Blog({ data }) {
     url: `/blogs/${slug}`,
   };
   return (
-    <Layout seo={seo}>
-      <Seo {...seo} />
-      <div className="blog-content">
-        <div className="columns">
-          <div className="column is-10 is-offset-1">
-            <div dangerouslySetInnerHTML={{ __html: html }}></div>
+    <>
+      <AppHeader seo={seo} />
+      <Layout seo={seo}>
+        <Seo {...seo} />
+        <div className="blog-content">
+          <div className="columns">
+            <div className="column is-10 is-offset-1">
+              <div dangerouslySetInnerHTML={{ __html: html }}></div>
+            </div>
           </div>
         </div>
-      </div>
-    </Layout>
+      </Layout>
+    </>
   );
 }
 

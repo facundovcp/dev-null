@@ -20,7 +20,7 @@ export default function BlogByMonth() {
             coverImage {
               childImageSharp {
                 gatsbyImageData(
-                  width: 100
+                  width: 75
                   blurredOptions: { width: 50 }
                   placeholder: BLURRED
                 )
@@ -31,11 +31,14 @@ export default function BlogByMonth() {
       }
     }
   `);
+
+  //ADD CARD IMAGE
   console.log(data.allMarkdownRemark);
   console.log(data);
   debugger;
   return (
     <>
+      <p className="latestArticles">More Entries:</p>
       <BlogListing blogs={data.allMarkdownRemark} />
     </>
   );
