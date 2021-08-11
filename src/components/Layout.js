@@ -4,8 +4,8 @@ import Footer from "./Footer";
 
 export default function Layout({ children, seo }) {
   return (
-    <div className="container is-max-desktop">
-      <AppHeader seo={seo} />
+    <div className="container p-2">
+      {/* <AppHeader seo={seo} /> */}
       {children}
       <Footer />
     </div>

@@ -1,11 +1,12 @@
 ---
 title: Why should one use Angular
 subtitle: An Introduction to Angular, its pros & cons, and how it differs from other frameworks/libraries.
-date: 2021-10-10
+date: 2021-02-10
 slug: why-should-one-use-angular
 author: Filip Jerga
 rating: 5
-coverImage: https://cdn.sanity.io/images/55mm68d3/production/79956e71c495a65556731eb6cd650ddd3922581b-750x422.jpg?h=600&fm=jpg&q=70
+coverImage: ./blog-cover-images/node.png
+cardImage: ./blog-cards-images/node.jpg
 ---
 
 # Why should one use Angular?

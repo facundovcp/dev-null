@@ -1,7 +1,7 @@
 {
   "blogs": [
     {
-      "slug": "react-bgnner-p1",
+      "slug": "react-bgnner-p1-react-intro-hooks",
       "title": "React.js beginner Part 1 - Library Introduction and how React works",
       "subtitle": " This article will cover some background of React, advantages of his usage, how react works and basic concepts to understand better this JavaScript library."
     },
@@ -11,9 +11,9 @@
       "subtitle": "Learn how to build a native app with Electron & React JS. Utilize JS, Html & CSS to create a fully native app."
     },
     {
-      "slug": "graphql-basics",
-      "title": "GraphQL - What it is and how it works",
-      "subtitle": "I decided to make an overview of the basic concepts in order to understand better GraphQL in action."
+      "slug": "js-design-patterns",
+      "title": "JS reveal and module design patterns",
+      "subtitle": "I decided to make an overview and examples of most common and known design patterns in JS."
     },
     {
       "slug": "learn-gatsby-quick",

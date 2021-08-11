@@ -1,11 +1,12 @@
 ---
 title: What are the benefits of the Gatsby.JS
 subtitle: As we step into a new tomorrow, our hunger and need for innovation and creativity seem to perch itself a rung higher than ever.
-date: 2021-05-10
+date: 2021-02-10
 slug: learn-gatsby-quick
 author: Filip Jerga
 rating: 1
-coverImage: https://cdn.sanity.io/images/55mm68d3/production/cf78a4e755382729b607067ec5e2633d915ce0ea-1200x628.jpg?h=600&fm=jpg&q=70
+coverImage: ./blog-cover-images/node.png
+cardImage: ./blog-cards-images/node.jpg
 ---
 
 # What are the benefits of the Next.JS framework?

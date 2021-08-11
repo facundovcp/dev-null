@@ -1,11 +1,12 @@
 ---
 title: Electron & React JS Build a Native App with Javascript, Part 1
 subtitle: Learn how to build a native app with Electron & React JS. Utilize JS, Html & CSS to create a fully native app.
-date: 2021-05-10
+date: 2021-02-10
 slug: build-a-native-app-with-javascript
 author: Filip Jerga
 rating: 1
-coverImage: https://cdn.sanity.io/images/55mm68d3/production/7e6821b42975ff4354159cc13cfe4ba1eec3526e-1280x720.jpg?h=600&fm=jpg&q=70
+coverImage: ./blog-cover-images/node.png
+cardImage: ./blog-cards-images/react.jpg
 ---
 
 # Electron & React JS: Build a Native App with Javascript, Part 1
