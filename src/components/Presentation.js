@@ -1,13 +1,16 @@
 import React from "react";
 import * as styles from "./Presentation.module.scss";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
 
 export default function Presentation({ seo }) {
   return (
     <>
       <div className={`${styles.galaxycontainer} is-desktop`}>
         <div className={`${styles.galaxy}`}></div>
+        <div className={`${styles.transparent1}`}></div>
         <div className={`${styles.transparent1}`}>
-          <div className="container p-6">
+          <div className="presentation container p-6">
             {/* <h1 className="devnullintro">Welcome to</h1> */}
             <h1 className="devnulltitle reveal-text">{"<dev/null>"}</h1>
             <p className="devnullintrotext">
@@ -18,7 +21,7 @@ export default function Presentation({ seo }) {
               programming<br></br>
               based on my opinion and experience.<br></br>I hope that you will
               find useful information in the different articles, and I encourage
-              <br></br> to the reader to leave comments with any questions.{" "}
+              <br></br> the reader to leave comments with any questions.{" "}
               <br></br>
               <br></br>
               If you want to know more <a>about me.</a>
@@ -26,6 +29,9 @@ export default function Presentation({ seo }) {
               Also you can check the shortcuts of the page by{" "}
               <a>clicking here.</a>
             </p>
+          </div>
+          <div className="presentationarrow">
+            <FontAwesomeIcon icon={faArrowDown} fixedWidth />
           </div>
         </div>
       </div>

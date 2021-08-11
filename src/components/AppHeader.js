@@ -15,7 +15,7 @@ const img = "../images/dev-null-logo-white.png";
 
 export default function AppHeader({ seo }) {
   return (
-    <nav className="navbar is-transparentp-4">
+    <nav className="navbar is-transparent">
       <div className="navbar-brand">
         <Link className="navbar-item" to="/">
           <StaticImage
@@ -52,7 +52,7 @@ export default function AppHeader({ seo }) {
         <div className="navbar-end ">
           <div className="navbar-item">
             <div className="field is-grouped">
-              <SearchContainer className="is-flex is-align-self-center mr-5" />
+              {/* <SearchContainer className="is-flex is-align-self-center mr-5" /> */}
             </div>
           </div>
           <div className="navbar-item">

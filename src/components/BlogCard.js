@@ -22,29 +22,41 @@ export default function BlogCard({
   cardImage,
 }) {
   return (
-    <div
-      className="card"
-      onClick={() => {
-        navigate(`/blogs/${slug}`);
-      }}
-    >
-      <header className="card-header">
+    <>
+      {/* <header className="card-header">
         <p className="card-header-title">{title}</p>
-      </header>
-      <div className="card-image">
-        <GatsbyImage image={getImage(cardImage)} alt={slug} />
+      </header> */}
+      <div
+        onClick={() => {
+          navigate(`/blogs/${slug}`);
+        }}
+        style={{
+          height: "175px",
+          width: "100%",
+          display: "flex",
+          cursor: "pointer",
+        }}
+      >
+        <GatsbyImage
+          style={{
+            maxHeight: 175,
+            minHeight: 175,
+            minWidth: "100%",
+            display: "block",
+          }}
+          image={getImage(cardImage)}
+          alt={slug}
+        />
       </div>
-      <div className="card-content">
-        <div className="content">
-          <p>{subtitle}</p>
-          <br />
-          <time dateTime="2016-1-1">{date}</time>
-        </div>
-      </div>
-      {/* <p style={style.description}>{subtitle}</p>
-      <Link className="button is-black is-small" to={`/blogs/${slug}`}>
-        Continue reading
-      </Link> */}
-    </div>
+      <div
+        style={{
+          height: "125px",
+          width: "100%",
+          display: "flex",
+          cursor: "pointer",
+          backgroundColor: "black",
+        }}
+      ></div>
+    </>
   );
 }

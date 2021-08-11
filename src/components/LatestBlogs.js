@@ -25,7 +25,7 @@ export default function LatestBlogs() {
             coverImage {
               childImageSharp {
                 gatsbyImageData(
-                  width: 100
+                  width: 75
                   blurredOptions: { width: 50 }
                   placeholder: BLURRED
                 )
@@ -35,6 +35,7 @@ export default function LatestBlogs() {
               childImageSharp {
                 gatsbyImageData(
                   blurredOptions: { width: 50 }
+                  height: 200
                   placeholder: BLURRED
                 )
               }
@@ -49,7 +50,7 @@ export default function LatestBlogs() {
   return (
     // <h1>Latest blogs</h1>
     <div className="p-4">
-      <p className="latestArticles">Latest Articles:</p>
+      {/* <p className="latestArticles">Latest Articles:</p> */}
       <BlogCards blogs={blogData} />
     </div>
   );
