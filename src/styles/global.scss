@@ -410,17 +410,21 @@ h2 {
 }
 
 .devnulltitle {
-  margin-top: 25%;
-  font-size: 60px !important;
+  // margin-top: 10vh;
+  padding-top: 5%;
+  height: 25%;
+  font-size: 70px !important;
   font-weight: bold !important;
   color: white !important;
   z-index: 1000 !important;
   letter-spacing: 5px;
+  animation: type 4s steps(60, end);
   // font-family: "'Press Start 2P', sans-serif";
 }
 
 .devnullintrotext {
-  font-size: 15px;
+  height: 65%;
+  font-size: 18px;
   color: white !important;
   z-index: 1000 !important;
   line-height: 2;
@@ -429,7 +433,7 @@ h2 {
 .navbar {
   padding-left: 4em;
   padding-right: 4em;
-  height: 80px;
+  height: 5vh;
 }
 
 .cardHeader {
@@ -440,19 +444,20 @@ h2 {
 }
 
 .presentation {
-  height: 90%;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  height: 100%;
 }
 
 .presentationarrow {
   cursor: pointer;
-  font-size: 25px;
-  padding-top: 1%;
+  font-size: 18px;
   height: 10%;
   text-align: center;
 }
 
 .presentationarrow:hover {
-  background: rgba(0, 0, 0, 0.9);
+  // background: rgba(0, 0, 0, 0.9);
   color: white;
   font-weight: bolder;
 }

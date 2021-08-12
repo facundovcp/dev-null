@@ -10,9 +10,9 @@ export default function Presentation({ seo }) {
         <div className={`${styles.galaxy}`}></div>
         <div className={`${styles.transparent1}`}></div>
         <div className={`${styles.transparent1}`}>
-          <div className="presentation container p-6">
+          <div className="presentation p-6">
             {/* <h1 className="devnullintro">Welcome to</h1> */}
-            <h1 className="devnulltitle reveal-text">{"<dev/null>"}</h1>
+            <h1 className="reveal-text devnulltitle">{"<dev/null>"}</h1>
             <p className="devnullintrotext">
               Hi, my name is Facundo and I want to tell you welcome to dev/null.
               <br></br> This is my personal site where you can find all my
@@ -29,9 +29,10 @@ export default function Presentation({ seo }) {
               Also you can check the shortcuts of the page by{" "}
               <a>clicking here.</a>
             </p>
-          </div>
-          <div className="presentationarrow">
-            <FontAwesomeIcon icon={faArrowDown} fixedWidth />
+            <div className="presentationarrow">
+              <p>Explore the content</p>
+              <FontAwesomeIcon icon={faArrowDown} fixedWidth />
+            </div>
           </div>
         </div>
       </div>
