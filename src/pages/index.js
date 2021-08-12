@@ -11,7 +11,12 @@ deckDeckGoHighlightElement();
 
 export default function IndexPage() {
   return (
-    <div>
+    <div
+      style={{
+        height: "100%",
+        width: "100%",
+      }}
+    >
       <AppHeader />
       <Presentation />
       <Layout>
