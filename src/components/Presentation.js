@@ -2,6 +2,7 @@ import React from "react";
 import * as styles from "./Presentation.module.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowDown } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-scroll";
 
 export default function Presentation({ seo }) {
   return (
@@ -12,7 +13,7 @@ export default function Presentation({ seo }) {
         <div className={`${styles.transparent1}`}>
           <div className="presentation p-6">
             {/* <h1 className="devnullintro">Welcome to</h1> */}
-            <h1 className="reveal-text devnulltitle">{"<dev/null>"}</h1>
+            <h1 className="devnulltitle">{"<dev/null>"}</h1>
             <p className="devnullintrotext">
               Hi, my name is Facundo and I want to tell you welcome to dev/null.
               <br></br> This is my personal site where you can find all my
@@ -26,12 +27,13 @@ export default function Presentation({ seo }) {
               <br></br>
               If you want to know more <a>about me.</a>
               <br></br>
-              Also you can check the shortcuts of the page by{" "}
-              <a>clicking here.</a>
+              {/* Also you can check the shortcuts of the page by{" "}
+              <a>clicking here.</a> */}
             </p>
             <div className="presentationarrow">
-              <p>Explore the content</p>
-              <FontAwesomeIcon icon={faArrowDown} fixedWidth />
+              <Link className="explore" to="main" smooth="true" duration={1000}>
+                <FontAwesomeIcon icon={faArrowDown} fixedWidth />
+              </Link>
             </div>
           </div>
         </div>

@@ -193,7 +193,7 @@ $iterations: 1;
 blockquote p::before {
   content: "";
   display: block;
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
@@ -212,8 +212,10 @@ blockquote {
 }
 
 .input {
+  // position: fixed;
   font-size: 13px;
-  height: 80%;
+  // height: 100%;
+  width: 100%;
   border-radius: 2px;
 }
 
@@ -450,6 +452,7 @@ h2 {
 }
 
 .presentationarrow {
+  display: block;
   cursor: pointer;
   font-size: 18px;
   height: 10%;
@@ -458,7 +461,7 @@ h2 {
 
 .presentationarrow:hover {
   // background: rgba(0, 0, 0, 0.9);
-  color: white;
+  // color: white;
   font-weight: bolder;
 }
 
@@ -466,4 +469,15 @@ h2 {
   width: 50px;
   height: 50px;
   color: white;
+}
+
+.explore {
+  color: white;
+  display: block;
+}
+
+.latestLabel {
+  margin-top: 5%;
+  margin-bottom: 5%;
+  text-align: center;
 }

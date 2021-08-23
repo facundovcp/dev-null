@@ -1,13 +1,14 @@
 import React from "react";
 import { graphql, useStaticQuery } from "gatsby";
 import BlogListing from "./BlogListing";
+import SearchContainer from "./SearchContainer";
 
 export default function BlogByMonth() {
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
         sort: { order: DESC, fields: frontmatter___date }
-        skip: 3
+        skip: 0
       ) {
         nodes {
           id
@@ -38,8 +39,15 @@ export default function BlogByMonth() {
   debugger;
   return (
     <>
-      <p className="latestArticles">More Entries:</p>
-      <BlogListing blogs={data.allMarkdownRemark} />
+      <div className="columns is-gapless">
+        <div className="column is-2"></div>
+        <div className="column is-8">
+          <SearchContainer></SearchContainer>
+          <BlogListing blogs={data.allMarkdownRemark} />
+        </div>
+        <div className="column is-2"></div>
+      </div>
+      {/* <p className="latestArticles">More Entries:</p> */}
     </>
   );
 }
