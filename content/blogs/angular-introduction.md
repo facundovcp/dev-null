@@ -6,7 +6,7 @@ slug: angular-introduction
 author: Facundo Lopez
 rating: 5
 coverImage: ./blog-cover-images/angular.png
-cardImage: ./blog-cards-images/angular.jpg
+cardImage: ./blog-cards-images/angular.png
 ---
 
 ![TODO: provide alt](https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fvictorroblesweb.es%2Fwp-content%2Fuploads%2F2017%2F04%2Fangular4.png&f=1&nofb=1)</div>

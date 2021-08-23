@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/Layout";
+import "bootstrap/dist/css/bootstrap.min.css";
 // import { graphql, Link } from "gatsby";
 import LatestBlogs from "../components/LatestBlogs";
 import BlogByMonth from "../components/BlogByMonth";
@@ -25,7 +26,7 @@ export default function IndexPage() {
           description="dev/null is aiming to be my personal blog to disclose my knowledge"
         />
         <LatestBlogs></LatestBlogs>
-        <BlogByMonth></BlogByMonth>
+        {/* <BlogByMonth></BlogByMonth> */}
       </Layout>
     </div>
   );

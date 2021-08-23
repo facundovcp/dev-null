@@ -7,7 +7,7 @@ author: Facundo Lopez
 rating: 5
 serie: Nodejs
 coverImage: ./blog-cover-images/node.png
-cardImage: ./blog-cards-images/node.jpg
+cardImage: ./blog-cards-images/node.png
 tags: [javascript, node.js, event-loop, backend, long-lecture]
 ---
 

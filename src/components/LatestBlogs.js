@@ -1,13 +1,22 @@
 import React from "react";
-import Layout from "../components/Layout";
-// import { graphql, Link } from "gatsby";
 import { graphql, useStaticQuery } from "gatsby";
 import BlogCards from "../components/BlogCards";
-import Seo from "../components/Seo";
+import BlogCarousel from "../components/BlogCarousel";
 import { defineCustomElements as deckDeckGoHighlightElement } from "@deckdeckgo/highlight-code/dist/loader";
 deckDeckGoHighlightElement();
 
+function getWindowDimensions() {
+  const { innerWidth: width, innerHeight: height } = window;
+  return {
+    width,
+    height,
+  };
+}
+
+const height = window.innerHeight;
+
 export default function LatestBlogs() {
+  getWindowDimensions();
   const data = useStaticQuery(graphql`
     query {
       allMarkdownRemark(
@@ -35,7 +44,7 @@ export default function LatestBlogs() {
               childImageSharp {
                 gatsbyImageData(
                   blurredOptions: { width: 50 }
-                  height: 200
+                  height: 400
                   placeholder: BLURRED
                 )
               }
@@ -49,9 +58,25 @@ export default function LatestBlogs() {
   const blogData = data.allMarkdownRemark;
   return (
     // <h1>Latest blogs</h1>
-    <div className="p-4">
+    <div
+      id="main"
+      style={{
+        height: "100%",
+      }}
+    >
       {/* <p className="latestArticles">Latest Articles:</p> */}
-      <BlogCards blogs={blogData} />
+      <div className="latestLabel">
+        <p>Latest on dev/null</p>
+      </div>
+      {/* <BlogCards blogs={blogData} /> */}
+      <div className="columns">
+        <div className="column is-2"></div>
+        <div className="column is-8">
+          <BlogCarousel blogs={blogData}></BlogCarousel>
+        </div>
+        {/* <div className="column is-5"></div> */}
+        <div className="column is-2"></div>
+      </div>
     </div>
   );
 }
